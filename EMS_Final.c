@@ -8,7 +8,6 @@
 #define MAX_USERS 10
 #define MAX_PASSWORD 20
 
-// User authentication structures
 typedef struct
 {
     char username[MAX_STRING];
@@ -59,21 +58,21 @@ void save_users_to_file();
 void load_users_from_file();
 
 // Main system functions
-void show_menu();             // Nazifa
-void add_employee();          // Ridwan
-void view_employees();        // Nazifa
-void update_employee();       // Ridwan
-void delete_employee();       // Moballig
-void mark_daily_attendance(); // Shams
-void view_attendance();       // Ridwan
-void calculate_payroll();     // Shams
-void save_to_file();          // Moballig
-void load_from_file();        // Moballig
-int get_next_id();            // Nazifa
-void pause();                 // Shams
-void clear_screen();          // Shams
+void show_menu();             
+void add_employee();          
+void view_employees();        
+void update_employee();       
+void delete_employee();       
+void mark_daily_attendance(); 
+void view_attendance();       
+void calculate_payroll();     
+void save_to_file();          
+void load_from_file();        
+int get_next_id();            
+void pause();                 
+void clear_screen();          
 
-int main() // Nazifa
+int main() 
 {
 
     load_users_from_file();
